@@ -47,7 +47,7 @@ const Home: NextPage = () => {
 
   // If used on the FRONTEND pass your 'clientId'
 const sdk = new ThirdwebSDK("polygon", {
-  clientId: "YOUR_CLIENT_ID",
+  clientId: "9202d63862ee579a15b7a71b15f25977",
   useEffect(() => {
     if (!tickets) return;
 
