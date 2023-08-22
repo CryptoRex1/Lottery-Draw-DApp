@@ -10,7 +10,7 @@ function MyApp({ Component, pageProps }: AppProps) {
   }, []);
 
   return (
-    <ThirdwebProvider desiredChainId={ChainId.Polygon}>
+    <ThirdwebProvider desiredChainId={ChainId.PolygonMainnet}>
       <Component {...pageProps} />
       <Toaster />
     </ThirdwebProvider>
@@ -18,4 +18,3 @@ function MyApp({ Component, pageProps }: AppProps) {
 }
 
 export default MyApp;
-
