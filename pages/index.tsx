@@ -11,7 +11,7 @@ import CountDownTimer from '../components/CountDownTimer';
 import toast from 'react-hot-toast';
 import Marquee from 'react-fast-marquee';
 import AdminControls from '../components/AdminControls';
-
+import { ThirdwebSDK } from "@thirdweb-dev/sdk";
 
 const Home: NextPage = () => {
 
@@ -45,6 +45,9 @@ const Home: NextPage = () => {
   
   const {data: isLotteryOperator} = useContractRead(contract, "lotteryOperator");
 
+  // If used on the FRONTEND pass your 'clientId'
+const sdk = new ThirdwebSDK("polygon", {
+  clientId: "YOUR_CLIENT_ID",
   useEffect(() => {
     if (!tickets) return;
 
