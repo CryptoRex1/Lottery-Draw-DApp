@@ -13,7 +13,7 @@ const sdk = new ThirdwebSDK("polygon", {
   clientId: "YOUR_CLIENT_ID",
 
 
-const contract = await sdk.getContract("0xCb7aB8F3Cf115c08F3741f9Eff409f8E3529dc7C");
+const contract = await sdk.getContract("0x0482531CA0D47BCc5dD52e710057B70ce5B942e1");
 
     // Add any global initialization or setup here
   }, []);
