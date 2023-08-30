@@ -10,7 +10,7 @@ function MyApp({ Component, pageProps }: AppProps) {
   }, []);
 
   return (
-    <ThirdwebProvider desiredChainId={ChainId.PolygonMainnet}>
+    <ThirdwebProvider desiredChainId={ChainId.polygon}>
       <Component {...pageProps} />
       <Toaster />
     </ThirdwebProvider>
